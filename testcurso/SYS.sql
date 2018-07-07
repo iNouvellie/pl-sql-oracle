@@ -1,24 +1,23 @@
 set serveroutput on;
 
 DECLARE
---Calcular area de un circulo
---Constantes
-    PI CONSTANT number := 3.141559;
-    
-    
---Variables
-    area number;
-    radio number;
+    cantidad number;
+    usuario nvarchar2(100);
     
 BEGIN
 
-    radio := 7;
+/*
+    select user into usuario from dual;
+    dbms_output.put_line ('Usario: ' || usuario );
     
-    area := PI * ( radio * radio);
+    select count (*) into cantidad from dual;
     
---dbms_output.put_line ('Area: ' || area || 'cm2' ); 
---Redondeo a 2 decimales
-    dbms_output.put_line ('Area: ' || round(area,2) || 'cm2' );
+    dbms_output.put_line ('Cantidad: ' || cantidad );
+*/
+
+    select user, count (*) into usuario, cantidad from dual;
     
+    dbms_output.put_line ('Usario: ' || usuario );
+    dbms_output.put_line ('Cantidad: ' || cantidad );
 END;
 /
