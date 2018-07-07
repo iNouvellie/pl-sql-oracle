@@ -1,2 +1,2 @@
 # pl-sql-oracle
-# clave oracle sys123
+# psw oracle sys123
