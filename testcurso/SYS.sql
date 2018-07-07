@@ -1,22 +1,24 @@
 set serveroutput on;
 
 DECLARE
---Definicion de funciones y variables
-    salario number := 1500;
-    nombreEmpleado nvarchar2(100);
-    activo boolean;
-    fecha date;
+--Calcular area de un circulo
+--Constantes
+    PI CONSTANT number := 3.141559;
+    
+    
+--Variables
+    area number;
+    radio number;
     
 BEGIN
 
-    nombreEmpleado := 'Roberto Rocuant';
-    activo := true;
-    fecha := sysdate;
+    radio := 7;
     
-    dbms_output.put_line ('Nombre: ' || nombreEmpleado );
-    dbms_output.put_line ('Salario: ' || salario );
-    dbms_output.put_line ('Fecha: ' || fecha );
-    dbms_output.put_line ('Activo: ' || case when activo then 'Si' else 'No' end );
+    area := PI * ( radio * radio);
+    
+--dbms_output.put_line ('Area: ' || area || 'cm2' ); 
+--Redondeo a 2 decimales
+    dbms_output.put_line ('Area: ' || round(area,2) || 'cm2' );
     
 END;
 /
