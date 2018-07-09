@@ -3,21 +3,21 @@ set serveroutput on;
 DECLARE
 --Definicion de funciones y variables
 
-    salario number := 1500;
-    nombreEmpleado nvarchar2(100);
-    activo boolean;
+    renta number := 1500;
+    nombreTrabajador nvarchar2(100);
+    on boolean;
     fecha date;
 
 BEGIN
 
-    nombreEmpleado := 'Roberto Rocuant';
-    activo := true;
+    nombreTrabajador := 'Roberto Rocuant';
+    on := true;
     fecha := sysdate;
     
-    dbms_output.put_line ('Nombre: ' || nombreEmpleado );
-    dbms_output.put_line ('Salario: ' || salario );
+    dbms_output.put_line ('Nombre: ' || nombreTrabajador );
+    dbms_output.put_line ('Renta: ' || renta );
     dbms_output.put_line ('Fecha: ' || fecha );
-    dbms_output.put_line ('Activo: ' || case when activo then 'Si' else 'No' end );
+    dbms_output.put_line ('On: ' || case when on then 'Si' else 'No' end );
 
 END;
 /
