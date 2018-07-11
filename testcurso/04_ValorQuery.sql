@@ -1,4 +1,5 @@
 set serveroutput on;
+
 /*
 --Muestra datos de dual
 select * from dual;
@@ -13,8 +14,7 @@ select user from dual;
 DECLARE
     cantidad number;
     usuario nvarchar2(100);
-    
-
+  
 BEGIN
     
     select user into usuario from dual;
@@ -28,8 +28,6 @@ BEGIN
     
 --Para simplificar ambos select se puede usar
 --select user, count (*) into usuario, cantidad from dual;
-
-    
-    
+  
 END;
 /
