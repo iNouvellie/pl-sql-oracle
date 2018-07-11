@@ -23,13 +23,13 @@ BEGIN
     
     nombre := trim( nombre );
 --Toma del nombre desde la posicion 1 de roberto (r) , 3 letras (rob)
-    dbms_output.put_line ('Cortar: ' || substr (nombre,1,3)  );
+    dbms_output.put_line ('Cortar: ' || substr (nombre,1,3) );
     
 --Reemplaza un texto por otro, sensible a maysc/minusc    
-    dbms_output.put_line ('Reemplazo: ' || replace (nombre, 'erto', 'ert')  );
+    dbms_output.put_line ('Reemplazo: ' || replace (nombre, 'erto', 'ert') );
 
 --Dejando espacio lo deja vacio
-    dbms_output.put_line ('Reemplazo: ' || replace (nombre, 'o', '')  );
+    dbms_output.put_line ('Reemplazo: ' || replace (nombre, 'o', '') );
     
 -------- o --------
 
