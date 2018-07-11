@@ -1,7 +1,7 @@
 set serveroutput on;
 
 DECLARE
---Definicion de funciones y variables
+--Definicion de funciones y variables.
 
     renta number := 1500;
     nombreTrabajador nvarchar2(100);
