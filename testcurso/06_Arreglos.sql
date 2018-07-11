@@ -1,11 +1,11 @@
 set serveroutput on;
 
 DECLARE
---Definicion de los arreglos
+--Definicion de los arreglos.
     type alumnosArray is varray(5) of nvarchar2(100);
     type notasArray is varray(5) of number;
 
---Ahora se puede crear items de ese tipo contenido en el arreglo
+--Ahora se puede crear items de ese tipo contenido en el arreglo.
     alumnos alumnosArray;
     notas notasArray;
 
@@ -26,7 +26,7 @@ BEGIN
     dbms_output.put_line ( notas(2) );
     dbms_output.put_line ( notas(3) );
 
---Cambia el valor de la nota en la posicion 1
+--Cambia el valor de la nota en la posicion 1.
     notas(1) := 30;
     
     dbms_output.put_line ( notas(1) );
