@@ -2,10 +2,10 @@ set serveroutput on;
 
 DECLARE
 
---Constantes
+--Constantes.
     PI CONSTANT number := 3.141559;
 
---Variables
+--Variables.
     area number;
     radio number;
 
