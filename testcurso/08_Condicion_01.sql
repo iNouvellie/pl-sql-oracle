@@ -10,7 +10,7 @@ BEGIN
     IF ( nota = 39 or nota = 38 ) THEN
         nota := 40;
 --En caso de ser muchas excepciones usar between
--- ( nota between 35 and 39 )
+--( nota between 35 and 39 )
         
     END IF;
 
